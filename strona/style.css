@@ -1,0 +1,231 @@
+/* 'Lato' */
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,900&display=swap');
+/* 'Source Sans Pro' */
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300&display=swap');
+
+html{
+    scroll-behavior: smooth;
+}
+body{
+    margin: 0;
+    background-color: #34312D;
+    overflow-x: hidden;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+body{
+  scrollbar-width: none;
+}
+
+#loader{
+    position: fixed;
+    background-color:#34312D;
+    height: 100vh;
+    width: 100%;
+    z-index: 10000;
+    visibility:visible;
+}
+
+.nivo-i-header{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    background-color: #34312D;
+}
+
+#slider{
+    margin-top: 3%;
+    margin-bottom: 3%;
+    background-color: rgb(150, 150, 150);
+    width: 50vw;
+    aspect-ratio: 16 / 9;
+    border-radius: 15px;
+}
+
+
+#headr{
+    padding-top: 1%;
+    color: rgb(200, 200, 200);
+    font-family: 'Lato', sans-serif;
+
+}
+
+.galeria-i-media{
+    display: flex;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    background-color: #D9C5B2;
+}
+
+#galeria{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    row-gap: 25px;
+    column-gap: 0px;
+    width: 100vw;
+    margin: 3%;
+    overflow: hidden;
+    
+}
+
+#galeria a{
+    border-radius: 10px;
+    width: 12vw;
+    height: auto;
+    aspect-ratio: 1.5;
+}
+
+#galeria > a > img{
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+}
+
+@media screen and (min-width:2600px) {
+    #galeria a{
+        width: 10vw;
+    }
+}
+
+
+
+@media screen and (orientation:portrait) {
+    .galeria-i-media{
+        align-items: start;
+        justify-content: center;
+        float: left;
+        height: 150vh;
+    }   
+    #galeria{
+        justify-content: center;
+        /* transform: translateX(-50%); */
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    #galeria > a{
+        width: 25vw;
+    }
+
+}
+
+#filmik-ftr{
+    width: 100%;
+    height: 2vh;
+    background-color:#4f4a43;
+    text-align: center;
+    font-family: 'Lato',sans-serif;
+    font-size: 2vh;
+}
+
+#header-filmik{
+    color: white;
+    font-family: 'Lato', sans-serif;
+    text-align: center;
+    font-size: large;
+}
+
+#multimedia-filmik{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+}
+#filmik{
+    width: 80vw;
+    height: 45vw;
+}
+
+.przyciski{
+    width: 40vw;
+    display: inline-flex;
+    justify-content: space-around;
+}
+
+#info-filmik{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: #D9C5B2;
+    background-color: #4f4a43;
+    height: 45px;
+    width: 100px;
+    border-radius: 25px;
+    border: solid;
+    border-color: rgba(0, 0, 0, 0.393);
+    border-width: 5px;
+    font-size: large;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#info-filmik>a{
+    text-decoration: none;
+    color: #D9C5B2;
+}
+
+#info-filmik:hover{
+    height: 55px;
+    width: 110px;
+    border-radius: 30px;
+    font-size: larger;
+    transform: translateY(-10%);
+}
+
+#slide-nadol{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: #D9C5B2;
+    background-color: #4f4a43;
+    height: 45px;
+    width: 80px;
+    border-radius: 25px;
+    border: solid;
+    border-color: rgba(0, 0, 0, 0.393);
+    border-width: 5px;
+    font-size: large;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: bold;
+    cursor: pointer;
+}
+#slide-nadol>a>p{
+    text-decoration: none;
+    color: #D9C5B2;
+}
+#slide-nadol>a{
+    text-decoration: none;
+}
+#slide-nadol:hover{
+    height: 55px;
+    width: 90px;
+    border-radius: 30px;
+    font-size: larger;
+    transform: translateY(-10%);
+}
+.przejscie{
+    aspect-ratio: 16/9;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.warstwa{
+    background-image: url(przejscie_kolorow.svg);
+}
+#tekst-flm{
+    color: white;
+    text-align: center;
+    font-family: 'Lato',sans-serif;
+    margin: 10px;
+}
+#mapa{
+    width: 60vw;
+    height: 40vw;
+}

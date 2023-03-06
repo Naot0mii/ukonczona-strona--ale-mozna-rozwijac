@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="lightgalleryjs-main/css/lightgallery.css">
+
+    <link rel="stylesheet" href="../themes/default/default.css" type="text/css" media="screen" />
+    <link rel="stylesheet" href="../themes/light/light.css" type="text/css" media="screen" />
+    <link rel="stylesheet" href="../themes/dark/dark.css" type="text/css" media="screen" />
+    <link rel="stylesheet" href="../themes/bar/bar.css" type="text/css" media="screen" />
+    <link rel="stylesheet" href="../nivo-slider.css" type="text/css" media="screen" />
+    
+    <title>Strona szkic</title>
+</head>
+<body>
+
+    <!-- <div id="loader"></div> -->
+
+    <div class="nivo-i-header">
+        <header id="headr"><h1>Blog ASG - Wojciech Kaszyński</h1></header>
+        <div id="wrapper">
+            <div class="slider-wrapper theme-default">
+                <div id="slider" class="nivoSlider">
+                    <img src="zdjecia/asg1.png" data-thumb="images/toystory.jpg" alt="" data-transition="slideInLeft"/>
+                    <img src="zdjecia/asg2.jpg" data-thumb="images/up.jpg" alt="" data-transition="slideInLeft"/>
+                    <img src="zdjecia/asg3.jpg" data-thumb="images/walle.jpg" alt="" data-transition="slideInLeft"/>
+                    <img src="zdjecia/asg4.jpg" data-thumb="images/nemo.jpg" alt="" data-transition="slideInLeft"/>
+                </div>
+            </div>
+    
+        </div>
+        <div class="przyciski">
+            <div id="slide-nadol"><a href="#galeria-i-media"><p>Galeria</p></a></div>
+            <div id="info-filmik"><a href="filmik.html">Filmik i info</a></div>
+        </div>
+    </div>
+    <div class="przejscie warstwa"></div>
+    <div class="galeria-i-media" id="galeria-i-media">
+        <div id="galeria-holder">
+            <div id="galeria">
+                      <a href="zdjecia/asg3.jpg" ><img src="zdjecia/asg3.jpg" alt=""></a>
+                      <a href="zdjecia/asg4.jpg" ><img src="zdjecia/asg4.jpg" alt=""></a>
+                      <a href="zdjecia/asg5.jpg" ><img src="zdjecia/asg5.jpg" alt=""></a>
+                      <a href="zdjecia/asg6.jpg" ><img src="zdjecia/asg6.jpg" alt=""></a> 
+                      <a href="zdjecia/asg7.jpg" ><img src="zdjecia/asg7.jpg" alt=""></a>
+                      <a href="zdjecia/asg8.jpg" ><img src="zdjecia/asg8.jpg" alt=""></a>
+                      <a href="zdjecia/asg9.jpg" ><img src="zdjecia/asg9.jpg" alt=""></a>
+                      <a href="zdjecia/asg10.jpg"><img src="zdjecia/asg10.jpg"alt=""></a> 
+                      <a href="zdjecia/asg1.png" ><img src="zdjecia/asg1.png" alt=""></a>
+                      <a href="zdjecia/asg11.jpg"><img src="zdjecia/asg11.jpg" alt=""></a>
+                      <a href="zdjecia/asg12.jpg"><img src="zdjecia/asg12.jpg" alt=""></a>
+                      <a href="zdjecia/asg13.jpg"><img src="zdjecia/asg13.jpg" alt=""></a>
+                      <a href="zdjecia/asg14.jpg"><img src="zdjecia/asg14.jpg" alt=""></a> 
+                      <a href="zdjecia/asg15.jpg"><img src="zdjecia/asg15.jpg" alt=""></a>
+                      <a href="zdjecia/asg16.jpg"><img src="zdjecia/asg16.jpg" alt=""></a>
+                      <a href="zdjecia/asg17.jpg"><img src="zdjecia/asg17.jpg" alt=""></a>
+                      <a href="zdjecia/asg18.jpg"><img src="zdjecia/asg18.jpg" alt=""></a> 
+                      <a href="zdjecia/asg19.jpg"><img src="zdjecia/asg19.jpg" alt=""></a>
+                      <a href="zdjecia/asg20.jpg"><img src="zdjecia/asg20.jpg" alt=""></a> 
+                      <a href="zdjecia/asg21.jpg"><img src="zdjecia/asg21.jpg" alt=""></a>
+
+            </div>
+        </div>
+    </div>
+    <footer id="filmik-ftr">Kontakt: +48000000000 <a href="zrodla.html">Źródła</a> Autor:Wojciech Kaszyński</footer>
+
+
+
+    <script src="script.js"></script>
+    <script src="lightgalleryjs-main/js/lightgallery.js"></script>
+    <script>
+        var imgGal = document.getElementById("galeria");
+        lightGallery(imgGal);
+    </script>
+
+        <script type="text/javascript" src="scripts/jquery-1.9.0.min.js"></script>
+        <script type="text/javascript" src="../jquery.nivo.slider.js"></script>
+        <script type="text/javascript">
+        $(window).load(function() {
+            $('#slider').nivoSlider();
+        });
+        </script>
+</body>
+</html>
